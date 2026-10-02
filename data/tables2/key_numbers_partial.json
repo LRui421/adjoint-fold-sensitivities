@@ -1,0 +1,46 @@
+{
+ "n_networks": 112,
+ "res_f_max": 1.6050127893407762e-10,
+ "res_Jv_max": 5.24989773875717e-11,
+ "res_uJ_max": 8.453057895540492e-11,
+ "gap_min": 0.209497235961052,
+ "kappa_max": 4.320017234391389,
+ "kappa_med": 1.1469301023639131,
+ "tol_spread_max": 0.047548741272325716,
+ "natcont_err_max": 6.612355886700827e-06,
+ "frac_drop_min": 0.4649122807017544,
+ "max_link_dbeta": -1.1049967380446606e-16,
+ "abs_a_min": 0.0036718009643481064,
+ "b_min": 11.905005751443989,
+ "fd_n": 2013,
+ "fd_best_median": 2.957188977599785e-10,
+ "fd_best_max": 1.0,
+ "fd_best_p99": 3.6391040665285445e-06,
+ "fd_by_kind": {
+  "lever": {
+   "n": 335,
+   "median": 3.851782127602656e-10,
+   "max": 1.4422509221424366e-06
+  },
+  "link": {
+   "n": 560,
+   "median": 2.2451797344673202e-10,
+   "max": 1.0
+  },
+  "node": {
+   "n": 1118,
+   "median": 3.096258244319567e-10,
+   "max": 0.00015805434892327287
+  }
+ },
+ "fd_forward_median": 0.00016118837571591448,
+ "sign_n": 1666,
+ "sign_all_positive": false,
+ "sign_n_nonpositive": 1,
+ "td_n": 3744,
+ "td_agree": 1.0,
+ "td_n_recovered": 911,
+ "td_persist": 1.0,
+ "td_disagree": 0,
+ "kappa_diag_max": -0.23684157927212013
+}

@@ -1,0 +1,29 @@
+# Python bytecode and tooling
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Operating-system and editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+
+# Runtime coordination and temporary files
+*.lock
+*.tmp
+*.temp
+*.bak
+*~
+
+# Recreated publication figures (derived from tracked code and data)
+figures/
