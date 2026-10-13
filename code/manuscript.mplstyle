@@ -1,0 +1,31 @@
+# Compact, manuscript-like defaults for the Figure 1--6 reproduction workflow.
+figure.dpi: 150
+savefig.dpi: 300
+savefig.bbox: tight
+
+font.family: DejaVu Sans
+font.size: 7
+
+axes.titlesize: 7
+axes.labelsize: 7
+axes.linewidth: 0.6
+axes.spines.top: False
+axes.spines.right: False
+
+xtick.labelsize: 6
+ytick.labelsize: 6
+xtick.major.size: 2.5
+ytick.major.size: 2.5
+xtick.major.width: 0.6
+ytick.major.width: 0.6
+
+lines.linewidth: 0.9
+lines.markersize: 3
+
+legend.fontsize: 5.5
+legend.frameon: False
+legend.handlelength: 1.2
+legend.handletextpad: 0.25
+
+pdf.fonttype: 42
+ps.fonttype: 42

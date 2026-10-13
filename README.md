@@ -17,6 +17,7 @@ The study tests whether dimension-reduction methods that predict a tipping thres
 │   ├── analysis2.py         # Result aggregation and CSV-table generation
 │   ├── figs2.py             # Figure 1--6 plotting functions
 │   ├── make_figures.py      # Reproducible Figure 1--6 entry point
+│   ├── manuscript.mplstyle  # Centralized manuscript-like plotting defaults
 │   ├── numbers2.py          # Manuscript-number calculation helpers
 │   ├── build_ms.py          # Optional LaTeX manuscript-token builder
 │   ├── run_kevan.py         # Lightweight Kevan-network run
@@ -56,7 +57,7 @@ The `data/` directory already contains the archived outputs used for the manuscr
 python code/make_figures.py
 ```
 
-`make_figures.py` writes both PNG and PDF versions of Figures 1--6 into the untracked `figures/` directory. The six figures are produced by the following functions in `code/figs2.py`: `fig1` (fold certification and finite differences), `fig2` (thresholds and sensitivity rankings), `fig3` (node protection), `fig4` (link interventions), `fig5` (restoration), and `fig6` (lever priorities and robustness).
+`make_figures.py` reads all four archived result collections, including `data/results_zhang/` for the Figure 2b comparator row, and writes both PNG and PDF versions of Figures 1--6 into the untracked `figures/` directory. It also writes disposable derived tables to the untracked `output_tables/` directory. The six figures are produced by the following functions in `code/figs2.py`: `fig1` (fold certification and finite differences), `fig2` (thresholds and sensitivity rankings), `fig3` (node protection), `fig4` (link interventions), `fig5` (restoration), and `fig6` (lever priorities and robustness).
 
 To recompute the archived simulations rather than use the supplied results, run these commands from `code/`. They are deterministic; `exp2.py` uses lock files, so separate copies may be run in parallel.
 
