@@ -1,5 +1,8 @@
-"""figs2 -- figures for the revised manuscript (run inside a kernel where apply_figure_style/panel_letter exist,
-after analysis2.main() has produced D)."""
+"""Figure functions for the revised manuscript.
+
+Use ``python code/make_figures.py`` from the repository root for the supported
+standalone Figure 1--6 reproduction workflow.
+"""
 import os, pickle, json
 import numpy as np
 import pandas as pd
@@ -147,6 +150,10 @@ def fig2(D, SW, outdir="."):
                 if col in T1:
                     M[i, j] = T1[T1.group == g][col].mean()
     im = ax.imshow(M, cmap="RdBu_r", norm=TwoSlopeNorm(0, -1, 1), aspect="auto")
+    # Line/scatter panels use the global open-axis style, but the manuscript's
+    # Figure 2b heatmap intentionally retains an enclosing frame.
+    for spine in ax.spines.values():
+        spine.set_visible(True)
     for i in range(M.shape[0]):
         for j in range(M.shape[1]):
             if np.isfinite(M[i, j]):
